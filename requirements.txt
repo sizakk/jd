@@ -1,7 +1,5 @@
-langchain
-langchain-openai
 ipython
-openai
+openai==0.28.1
 streamlit
 pandas
 python-dotenv
