@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import openai
+from openai import OpenAI
 import json
 import re
 from dotenv import load_dotenv
@@ -8,7 +8,10 @@ import os
 
 # .env 파일에서 API 키 불러오기
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+
+client = OpenAI(
+    api_key =os.getenv("OPENAI_API_KEY")
+)
 
 # JSON 추출 함수: 응답에서 JSON 부분만 추출
 def extract_json(content):
@@ -61,7 +64,7 @@ def generate_job_details_with_gpt(job_name):
 
     try:
         # ChatCompletion API 호출
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4-turbo",  # gpt-4-turbo 사용
             messages=[
                 {"role": "system", "content": "I want you to act as a HR manager."},
