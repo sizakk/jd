@@ -1,4 +1,3 @@
-pip install openai==0.28
 import streamlit as st
 import pandas as pd
 import openai
