@@ -1,0 +1,11 @@
+langchain
+langchain-openai
+ipython
+openai
+streamlit
+pandas
+python-dotenv
+tabulate
+langchain-pinecone
+langchain-community
+json
