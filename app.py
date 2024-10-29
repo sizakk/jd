@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from openai import OpenAI
 import openai
 import json
 import re
@@ -9,10 +8,7 @@ import os
 
 # .env 파일에서 API 키 불러오기
 load_dotenv()
-
-client = OpenAI(
-    api_key =os.getenv("OPENAI_API_KEY")
-)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # JSON 추출 함수: 응답에서 JSON 부분만 추출
 def extract_json(content):
