@@ -8,4 +8,3 @@ python-dotenv
 tabulate
 langchain-pinecone
 langchain-community
-json
