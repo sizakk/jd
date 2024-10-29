@@ -64,7 +64,7 @@ def generate_job_details_with_gpt(job_name):
 
     try:
         # ChatCompletion API 호출
-        response = client.chat.completions.create(
+        response = openai.ChatCompletion.create(
             model="gpt-4-turbo",  # gpt-4-turbo 사용
             messages=[
                 {"role": "system", "content": "I want you to act as a HR manager."},
