@@ -100,7 +100,7 @@ def generate_job_details_with_gpt(job_name):
         return pd.DataFrame()
 
 # Streamlit UI 구성
-st.title("💡직무중심HR TF::AI기반 직무기술서 생성")
+st.title("💡직무중심HR::AI기반 직무기술서")
 
 # Form을 사용해 Enter 키로 제출 가능하도록 구성
 with st.form("job_input_form"):
