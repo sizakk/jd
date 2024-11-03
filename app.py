@@ -7,7 +7,7 @@ st.sidebar.title("버전 선택")
 page = st.sidebar.radio("페이지를 선택하세요:", ("현재 버전", "이전 버전"))
 
 # 선택된 페이지에 따라 다른 화면 표시
-if page == "현재 화면":
+if page == "현재 버전":
     show_main_screen()
 elif page == "이전 버전":
     show_previous_version()
