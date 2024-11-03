@@ -1,8 +1,19 @@
+<<<<<<< HEAD
 ipython
 openai==0.28.1
+=======
+langchain
+langchain-openai
+ipython
+openai
+>>>>>>> ecf845ba (Initial Commit)
 streamlit
 pandas
 python-dotenv
 tabulate
 langchain-pinecone
 langchain-community
+<<<<<<< HEAD
+=======
+json
+>>>>>>> ecf845ba (Initial Commit)
